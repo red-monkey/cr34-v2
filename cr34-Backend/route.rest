@@ -1,0 +1,67 @@
+GET http://localhost:8000/predictions
+
+###
+
+GET http://localhost:8000/predictions/644d0cdf151fc039c652c5ce
+
+###
+
+
+GET http://localhost:8000/predictions/644d0cdf151fc039c652c5ce
+
+###
+
+POST http://localhost:8000/predictions
+Content-Type: application/json
+
+
+{
+    "fullName":"Gürkan Doğan",
+    "email":"gürkan@gmail.com",
+    "prediction":"it is a car"
+}
+
+###
+
+DELETE http://localhost:8000/predictions/644d167e7e9320f62c940037
+
+###
+
+PATCH http://localhost:8000/predictions/644d167e7e9320f62c940037
+
+Content-Type: application/json
+
+
+{
+    "fullname":"furkan",
+}
+
+###
+
+POST http://localhost:8000/advocators
+Content-Type: application/json
+
+{
+    "fullName":"Gürkan Doğan",
+    "email":"gürkan@gmail.com"
+}
+
+
+###
+
+GET http://localhost:8000/advocators
+
+###
+
+GET http://localhost:8000/advocators/645913a35fca2b4d85bb4c1b
+
+
+###
+
+
+PATCH http://localhost:8000/advocators/645911af5fca2b4d85bb4c14
+Content-Type: application/json
+
+{
+    "referralNumber": 2
+}
