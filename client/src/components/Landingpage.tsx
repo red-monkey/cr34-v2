@@ -59,7 +59,6 @@ function Landingpage({}: Props) {
   });
 
   const baseURL = process.env.REACT_APP_API_URL;
-  console.log({ baseURL });
 
   const { id } = useParams<id>();
 
