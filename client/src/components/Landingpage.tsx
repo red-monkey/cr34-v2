@@ -58,7 +58,8 @@ function Landingpage({}: Props) {
     referralNumber: 0,
   });
 
-  const baseURL = "http://localhost:8000/";
+  const baseURL = process.env.REACT_APP_API_URL;
+  console.log({ baseURL });
 
   const { id } = useParams<id>();
 
